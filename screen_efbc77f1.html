@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "background": "#faf8ff", "on-primary-fixed": "#00201d", "surface-container": "#eaedff", "secondary-fixed-dim": "#93ccff", "on-tertiary": "#ffffff", "error": "#ba1a1a", "surface-container-high": "#e2e7ff", "on-primary": "#ffffff", "outline-variant": "#bcc9c6", "on-tertiary-fixed": "#00201d", "inverse-on-surface": "#eef0ff", "on-primary-fixed-variant": "#005049", "on-error-container": "#93000a", "tertiary-fixed": "#9cf2e8", "on-tertiary-container": "#f3fffc", "on-tertiary-fixed-variant": "#00504a", "secondary-container": "#5bb8fe", "inverse-primary": "#6bd8cb", "surface-container-lowest": "#ffffff", "surface-tint": "#006a61", "inverse-surface": "#283044", "surface-container-highest": "#dae2fd", "surface": "#faf8ff", "primary-fixed": "#89f5e7", "error-container": "#ffdad6", "on-surface": "#131b2e", "secondary": "#006398", "on-primary-container": "#f4fffc", "outline": "#6d7a77", "surface-container-low": "#f2f3ff", "tertiary": "#006860", "tertiary-container": "#248279", "on-background": "#131b2e", "primary": "#00685f", "surface-variant": "#dae2fd", "on-error": "#ffffff", "secondary-fixed": "#cce5ff", "primary-container": "#008378", "on-secondary-fixed-variant": "#004b73", "on-secondary-container": "#00476e", "surface-dim": "#d2d9f4", "surface-bright": "#faf8ff", "primary-fixed-dim": "#6bd8cb", "tertiary-fixed-dim": "#80d5cb", "on-surface-variant": "#3d4947", "on-secondary-fixed": "#001d31", "on-secondary": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "margin": "1rem", "margin-desktop": "3rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "gutter-tablet": "1.25rem", "gutter-desktop": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-tablet": "2rem", "space-sm": "0.5rem" }, fontFamily: { "label-sm": ["Inter"], "body-lg": ["Inter"], "label-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Inter"], "label-md": ["Inter"], "display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "label-sm": ["11px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "label-lg": ["15px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.015em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "18px", fontWeight: "400" }], "headline-lg-mobile": ["26px", { lineHeight: "34px", letterSpacing: "-0.01em", fontWeight: "700" }], "headline-sm": ["18px", { lineHeight: "26px", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }], "label-md": ["13px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "600" }], "display": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-md": ["22px", { lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between gap-2"><div class="flex items-center gap-space-sm min-w-0"><img alt="C.S. Dental Care Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VyRKFXFdSA9e3R71ekFHH3_NSDzXtsScbHlYdKMMxmo8M9PqxtDAsFEC-M1gfFjidwCBLa8DB9y_MBjDLwLy8e11HseXPt4oo5M7xlpVg7R3RimhapQ3mbap_r7UePPm_-KytMi8pOg6KwnI8E-6osqJ4La2nutpRsbfKg4ua41i7BjFvc69fU8bB6BWBwcT3oYr-ck-1qtHc86E3pnyLS0ApgkXGTTaEf9zkrihX1yTGMXwL2bor9Wg"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface truncate tracking-tight">C.S. DENTAL CARE</span><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">4.9 <span class="material-symbols-outlined text-[13px] text-primary">star</span></span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal truncate">• Clinic Overview</span></div></div></div><div class="flex items-center gap-space-xs shrink-0"><a class="h-9 px-3 rounded-full bg-error-container text-on-error-container flex items-center gap-1 font-label-sm text-label-sm transition-transform active:scale-95" href="tel:8778558529"><span class="material-symbols-outlined text-[16px]">call</span><span class="hidden sm:inline font-semibold">8778558529</span><span class="sm:hidden font-semibold">Emergency</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDabeoki_IOSKV26LFceoiMpoBDyJWiBHyotZCP432QYJoSd5aKVHticuH6l1rS2zLL14o2B54eCKp3COJfwp-ZxrL7Mxi-1kcsBR0NARxJmsz8yPSWgYukxk7m8tc71vfAEc9TbqMP_PGsI2Bur3a9x3aMzsdFb67YUwX0I8bU4sNkHvMzv_Miaofq9OCJiOo9lQk0-m4HQ0xeafopAnLeTu1gIOid1SQ27pNIffLIDkCZqztkx8Zo"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full">
+<!-- TOP TRUST TICKER -->
+<div class="px-gutter pt-3 pb-1 flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Clinic Open Today • Walk-ins Welcome</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> ISO 9001 Safe
+    </span>
+</div>
+<!-- HERO SECTION -->
+<section class="px-gutter pt-2 pb-4">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-b from-surface-container-low via-surface-container-lowest to-surface-container-lowest p-space-md shadow-sm">
+<div class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm mb-2">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+        Acharapakkam’s Premier Dental Care
+      </div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold tracking-tight mb-2">
+        Gentle Care for Your <span class="text-primary">Healthiest Smile</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+        Advanced painless dental treatments in Lakshmi Complex, opposite IOB. Serving families across Acharapakkam &amp; nearby regions with compassion.
+      </p>
+<!-- Primary CTAs -->
+<div class="flex flex-col sm:flex-row gap-space-sm mb-space-md">
+<a class="h-12 px-space-md rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-98 transition-transform" href="#quick-booking">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span>Book Appointment</span>
+</a>
+<a class="h-12 px-space-md rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 active:scale-98 transition-transform" href="tel:8778558529">
+<span class="material-symbols-outlined text-[20px] text-primary">call</span>
+<span>Call: 8778558529</span>
+</a>
+</div>
+<!-- Hero Visual Card with Experience Highlights -->
+<div class="relative rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-44 object-cover" data-alt="Modern ultra-clean dental clinic treatment room in Tamil Nadu with an ergonomic light teal patient chair, advanced digital radiography scanner, soft ambient morning daylight, potted indoor plants, pristine sterilized stainless steel trays, serene calm atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCibHLvz8tYhE7x5awOac14Vd5RDXXP1LWjeuAERf-sPklikEJvm5PcANM57NtVnu7C08wdVCIoLoAVu6WkeYObed9wRFl_8QvvavmvhxAX9J1-6vi-bODLJE8Np1jv_P6tU62l_47aNjQPwqsqzmQ-O2KPgQzzoI0h17ISNghauURy1vbCqW1U7zWilnInXf6sV2wGwkqicNWu7eY7A69vdAptjJHpv9TTOtlKy809R8RcFSrZzB1b"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/30 to-transparent"></div>
+<div class="absolute bottom-3 inset-x-3 flex items-center justify-between text-inverse-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed text-[24px]">verified_user</span>
+<div>
+<p class="font-label-sm text-label-sm font-bold text-white">100% Sterilized Operatory</p>
+<p class="font-body-sm text-[10px] text-slate-200">Autoclave Class-B Validated</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-[10px] uppercase font-bold tracking-wider">Acharapakkam</span>
+</div>
+</div>
+<!-- Quick Trust Counters -->
+<div class="grid grid-cols-3 gap-2 mt-3 pt-3">
+<div class="text-center p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="block font-headline-sm text-headline-sm text-primary font-bold">10,000+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight block">Happy Smiles</span>
+</div>
+<div class="text-center p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="block font-headline-sm text-headline-sm text-secondary font-bold">15+ Yrs</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight block">Clinical Trust</span>
+</div>
+<div class="text-center p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="block font-headline-sm text-headline-sm text-tertiary font-bold">Zero-Pain</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight block">Tech Protocol</span>
+</div>
+</div>
+</div>
+</section>
+<!-- QUICK ACTION SHORTCUTS BAR -->
+<section class="px-gutter pb-4">
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm">
+<div class="grid grid-cols-4 gap-1 text-center">
+<a class="flex flex-col items-center justify-center p-2 rounded-lg active:bg-surface-container-high transition-colors" href="tel:8778558529">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface font-semibold">Call Clinic</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 rounded-lg active:bg-surface-container-high transition-colors" href="https://wa.me/918778558529?text=Hello%20CS%20Dental%20Care,%20I%20would%20like%20to%20inquire%20about%20an%20appointment." target="_blank">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface font-semibold">WhatsApp</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 rounded-lg active:bg-surface-container-high transition-colors" href="#location-map">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface font-semibold">Directions</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 rounded-lg active:bg-surface-container-high transition-colors" href="#quick-booking">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[20px]">event_available</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface font-semibold">Book Slot</span>
+</a>
+</div>
+</div>
+</section>
+<!-- CLINIC TIMINGS & LOCATION CARD -->
+<section class="px-gutter pb-space-lg" id="location-map">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">store</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Clinic Location &amp; Hours</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Acharapakkam, Tamil Nadu</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-[11px]">Easy Access</span>
+</div>
+<!-- Address Breakdown -->
+<div class="p-3 rounded-lg bg-surface-container-low mb-3">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">pin_drop</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold">C.S. DENTAL CARE</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+              First Floor, Lakshmi Complex, No: 15/1, Opposite to IOB, Acharapakkam, Tamil Nadu 603301
+            </p>
+<div class="mt-2 inline-flex items-center gap-1.5 px-2 py-1 rounded bg-surface-container text-on-surface text-body-sm text-[11px] font-medium">
+<span class="material-symbols-outlined text-[14px] text-secondary">explore</span>
+<span>Opp. Indian Overseas Bank • 2 mins from Bus Stand &amp; Railway Stn</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Map Visual Representation with data-location -->
+<div class="relative w-full h-40 rounded-lg overflow-hidden mb-3 shadow-inner" data-location="Lakshmi Complex, Opposite IOB, Acharapakkam, Tamil Nadu 603301" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDqBmli84d9eZKy9LfkHQc-SqyXNg-Rh9g0jiMy2JjV13qv_unkd-ZderopIyGZxWXroy_RJhOD8dvzeEfv9M5YqdWnwfjHsP1bKTfDacWcJUFUhbnI7ZKpj-zZeweTW6NXZN0L6Nk-5kvW16oC5B0KeOl8ovf6KpZbadj4TWsVRDViRFrPoMgeRDtBx127dPyXuZxJA0uBHlMZ12f7Q0fnc1AfRQIMbwZU45EsWNKFTMzAE31LEPGH')">
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between">
+<span class="px-2 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-sm font-label-sm text-[11px] text-on-surface font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-error">navigation</span> Opposite IOB, 1st Floor
+          </span>
+<a class="px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-md flex items-center gap-1 active:scale-95 transition-transform" href="https://maps.google.com/?q=Lakshmi+Complex+Acharapakkam+Tamil+Nadu" target="_blank">
+<span>Open Maps</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Operating Hours Matrix -->
+<div class="p-3 rounded-lg bg-surface-container-low space-y-2">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1.5 font-medium">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span> Monday – Saturday
+          </span>
+<span class="text-on-surface font-semibold">9:30 AM – 8:30 PM</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm pt-1.5">
+<span class="text-on-surface-variant flex items-center gap-1.5 font-medium">
+<span class="material-symbols-outlined text-[16px] text-secondary">wb_sunny</span> Sunday
+          </span>
+<div class="text-right">
+<span class="text-on-surface font-semibold">10:00 AM – 2:00 PM</span>
+<span class="block text-[10px] text-error font-medium">(Emergency On-Call)</span>
+</div>
+</div>
+</div>
+<div class="mt-3 flex gap-2">
+<a class="flex-1 h-11 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 active:scale-98 transition-transform" href="tel:8778558529">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+<span>Call 8778558529</span>
+</a>
+<a class="px-4 h-11 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-98 transition-transform" href="https://maps.google.com/?q=Lakshmi+Complex+Acharapakkam" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-primary">near_me</span>
+<span>Route</span>
+</a>
+</div>
+</div>
+</section>
+<!-- CORE DENTAL TREATMENTS GRID -->
+<section class="px-gutter pb-space-lg">
+<div class="flex items-end justify-between mb-3">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Multi-Speciality Expertise</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Featured Treatments</h2>
+</div>
+<a class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-0.5" href="tel:8778558529">
+        Enquire <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Treatment 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[22px]">health_and_safety</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold leading-snug">Single-Visit RCT</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-1 line-clamp-2">
+            Painless root canal therapy with digital rotary endodontics.
+          </p>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between">
+<span class="font-label-sm text-[10px] text-primary font-semibold">Pain-Free Tech</span>
+<span class="material-symbols-outlined text-outline text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Treatment 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[22px]">cleaning_services</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold leading-snug">Teeth Whitening</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-1 line-clamp-2">
+            Ultrasonic scaling, stain removal &amp; enamel polishing.
+          </p>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between">
+<span class="font-label-sm text-[10px] text-secondary font-semibold">Instant Shine</span>
+<span class="material-symbols-outlined text-outline text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Treatment 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[22px]">auto_fix_high</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold leading-snug">Implants &amp; Crowns</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-1 line-clamp-2">
+            Zirconia &amp; ceramic natural tooth restoration with lifetime durability.
+          </p>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between">
+<span class="font-label-sm text-[10px] text-tertiary font-semibold">Zirconia Caps</span>
+<span class="material-symbols-outlined text-outline text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Treatment 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[22px]">sentiment_satisfied</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold leading-snug">Clear Aligners</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-1 line-clamp-2">
+            Invisible braces &amp; orthodontic correction for flawless smiles.
+          </p>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between">
+<span class="font-label-sm text-[10px] text-primary font-semibold">Custom Fit</span>
+<span class="material-symbols-outlined text-outline text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Treatment 5 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[22px]">child_care</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold leading-snug">Kids Dentistry</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-1 line-clamp-2">
+            Gentle pediatric dental fluoride, pit/fissure sealants &amp; pain-free fillings.
+          </p>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between">
+<span class="font-label-sm text-[10px] text-secondary font-semibold">Fear-Free</span>
+<span class="material-symbols-outlined text-outline text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Treatment 6 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-error-container text-on-error-container flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[22px]">healing</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold leading-snug">Wisdom Surgery</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-1 line-clamp-2">
+            Safe minor oral surgery &amp; impacted molar extraction with quick healing.
+          </p>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between">
+<span class="font-label-sm text-[10px] text-error font-semibold">Min-Invasive</span>
+<span class="material-symbols-outlined text-outline text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- DOCTOR TEAM SPOTLIGHT & CLINICAL RIGOR -->
+<section class="px-gutter pb-space-lg" id="patient-reviews"><div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm"><div class="flex items-start justify-between mb-4"><div class="min-w-0"><div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-[11px] mb-1.5"><svg class="w-3.5 h-3.5 shrink-0" viewbox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path></svg><span class="font-semibold">Google Verified Reviews</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Trusted by 10,000+ Families</h3></div><div class="text-right shrink-0"><div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-bold text-label-md"><span>4.9</span><span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span></div><span class="block font-body-sm text-[10px] text-on-surface-variant mt-0.5">180+ Reviews</span></div></div><div class="space-y-3"><div class="p-3 rounded-lg bg-surface-container-low border border-outline-variant/30"><div class="flex items-center justify-between mb-1.5"><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-primary text-on-primary font-bold text-xs flex items-center justify-center shadow-sm">M</div><div><p class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">Murugan K. <span class="material-symbols-outlined text-primary text-[14px]">verified</span></p><p class="font-body-sm text-[10px] text-on-surface-variant">Acharapakkam Resident • 2 weeks ago</p></div></div><div class="flex text-amber-500 text-[12px]"><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span></div></div><span class="inline-block mb-1.5 px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-[10px] font-semibold">Root Canal Treatment</span><p class="font-body-md text-body-md text-on-surface-variant text-[13px] leading-relaxed">“I had acute molar pain and visited C.S. Dental right opposite IOB. The root canal treatment was completely painless and finished in just one sitting. Pristine hygienic operatory and polite staff.”</p></div><div class="p-3 rounded-lg bg-surface-container-low border border-outline-variant/30"><div class="flex items-center justify-between mb-1.5"><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-secondary text-on-secondary font-bold text-xs flex items-center justify-center shadow-sm">S</div><div><p class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">Saranya R. <span class="material-symbols-outlined text-primary text-[14px]">verified</span></p><p class="font-body-sm text-[10px] text-on-surface-variant">Mother of 8-year-old • 1 month ago</p></div></div><div class="flex text-amber-500 text-[12px]"><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span></div></div><span class="inline-block mb-1.5 px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-[10px] font-semibold">Kids Dentistry &amp; Cleaning</span><p class="font-body-md text-body-md text-on-surface-variant text-[13px] leading-relaxed">“Very gentle doctor. My daughter was scared of dental chairs, but they explained every step and handled her with utmost patience. Clear transparent fees without hidden charges.”</p></div><div class="p-3 rounded-lg bg-surface-container-low border border-outline-variant/30"><div class="flex items-center justify-between mb-1.5"><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-tertiary text-on-tertiary font-bold text-xs flex items-center justify-center shadow-sm">V</div><div><p class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">Vigneshwaran P. <span class="material-symbols-outlined text-primary text-[14px]">verified</span></p><p class="font-body-sm text-[10px] text-on-surface-variant">Madurantakam • Recent</p></div></div><div class="flex text-amber-500 text-[12px]"><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span></div></div><span class="inline-block mb-1.5 px-2 py-0.5 rounded bg-surface-container text-tertiary font-label-sm text-[10px] font-semibold">Wisdom Tooth Extraction</span><p class="font-body-md text-body-md text-on-surface-variant text-[13px] leading-relaxed">“Got my impacted wisdom tooth extracted painlessly in 20 minutes. State-of-the-art sterilised equipment and rapid healing. Best dental clinic in the Acharapakkam belt.”</p></div></div><div class="mt-4 grid grid-cols-2 gap-2"><a class="h-11 px-3 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-98 transition-transform text-center" href="https://maps.app.goo.gl/cz8bz7fvJxQhAcTs5" rel="noopener" target="_blank"><span class="material-symbols-outlined text-[18px] text-primary">reviews</span><span class="text-[12px] font-semibold">View all Reviews</span></a><a class="h-11 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-98 transition-transform text-center" href="https://maps.app.goo.gl/L2wNMJk4mHj1FioPA" rel="noopener" target="_blank"><span class="material-symbols-outlined text-[18px]">rate_review</span><span class="text-[12px] font-semibold">Write a Review</span></a></div><div class="mt-3 pt-2 text-center border-t border-outline-variant/30 flex items-center justify-center gap-1.5 text-on-surface-variant font-label-sm text-[11px]"><span class="material-symbols-outlined text-primary text-[15px]">verified</span><span>100% Real Patient Feedback • Verified by Google Maps</span></div></div></section>
+<!-- PATIENT REVIEWS & RATINGS -->
+<section class="px-gutter pb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Patient Testimonials</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Trusted by 10,000+ Families</h3>
+</div>
+<div class="text-right">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-bold text-label-md">
+<span>4.9</span>
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="block font-body-sm text-[10px] text-on-surface-variant mt-0.5">Google Verified</span>
+</div>
+</div>
+<!-- Testimonial Cards Carousel / Stack -->
+<div class="space-y-3">
+<!-- Review 1 -->
+<div class="p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between mb-1.5">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary font-bold text-xs flex items-center justify-center">
+                M
+              </div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface font-semibold">Murugan K.</p>
+<p class="font-body-sm text-[10px] text-on-surface-variant">Acharapakkam Local Resident</p>
+</div>
+</div>
+<div class="flex text-amber-500 text-[12px]">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-[13px]">
+            “I had extreme molar pain and visited C.S. Dental opposite IOB. The root canal treatment was completely painless and done in just one sitting. Highly hygienic clinic.”
+          </p>
+</div>
+<!-- Review 2 -->
+<div class="p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between mb-1.5">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary font-bold text-xs flex items-center justify-center">
+                S
+              </div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface font-semibold">Saranya R.</p>
+<p class="font-body-sm text-[10px] text-on-surface-variant">Mother of 8-year-old</p>
+</div>
+</div>
+<div class="flex text-amber-500 text-[12px]">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-[13px]">
+            “Very gentle doctor. My daughter was scared of dental visits, but they handled her with so much patience and care. Reasonable fees without hidden charges.”
+          </p>
+</div>
+</div>
+<!-- Trust Stamp Badge -->
+<div class="mt-4 p-3 rounded-lg bg-surface-container flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-bold">100% Patient Privacy &amp; Cleanliness</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Dedicated disposable kits for each patient • No shared instruments</p>
+</div>
+</div>
+</div>
+</section>
+<!-- QUICK APPOINTMENT BOOKING FORM -->
+<section class="px-gutter pb-6" id="quick-booking">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-[22px]">edit_calendar</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Request an Appointment</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+        Pick your preferred time. Our front desk will confirm within 15 minutes.
+      </p>
+<form class="space-y-3" id="booking-form" onsubmit="handleBookingSubmit(event)">
+<!-- Patient Name -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Patient Full Name *</label>
+<input class="w-full h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container transition-colors" placeholder="e.g. Ramesh Kumar" required="" type="text"/>
+</div>
+<!-- Phone Number -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">WhatsApp / Phone Number *</label>
+<input class="w-full h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container transition-colors" pattern="[0-9]{10}" placeholder="e.g. 9876543210" required="" type="tel"/>
+</div>
+<!-- Treatment Selection -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Dental Need / Concern *</label>
+<div class="relative">
+<select class="w-full h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container appearance-none transition-colors" required="">
+<option value="">Select Treatment</option>
+<option value="Tooth Pain / Emergency">Tooth Pain / Emergency</option>
+<option value="Root Canal Treatment (RCT)">Root Canal Treatment (Single-Sitting)</option>
+<option value="Teeth Cleaning &amp; Scaling">Teeth Cleaning &amp; Polishing</option>
+<option value="Braces &amp; Aligners">Braces &amp; Invisible Aligners</option>
+<option value="Crowns &amp; Implants">Crowns / Caps / Dental Implants</option>
+<option value="Kids Dental Checkup">Kids Dental Checkup</option>
+<option value="General Consultation">General Consultation</option>
+</select>
+<span class="material-symbols-outlined text-on-surface-variant absolute right-3 top-3 pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Preferred Date & Slot -->
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Preferred Day</label>
+<select class="w-full h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container appearance-none transition-colors">
+<option value="Today">Today</option>
+<option value="Tomorrow">Tomorrow</option>
+<option value="This Weekend">This Weekend</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Time Slot</label>
+<select class="w-full h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container appearance-none transition-colors">
+<option value="Morning">Morning (9:30 AM - 1:00 PM)</option>
+<option value="Evening">Evening (4:30 PM - 8:30 PM)</option>
+</select>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="w-full h-12 mt-2 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-98 transition-transform" type="submit">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+<span>Confirm Appointment Request</span>
+</button>
+</form>
+<!-- Success Feedback Toast (Toggled by JS) -->
+<div class="hidden mt-3 p-3 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center gap-2 animate-fade-in" id="booking-success">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="font-label-sm text-label-sm font-medium">Thank you! Our front desk will call you shortly at C.S. Dental Care.</span>
+</div>
+<!-- Instant Support Text -->
+<div class="mt-4 pt-3 text-center">
+<p class="font-body-sm text-[11px] text-on-surface-variant">
+          Need immediate assistance? Call us directly: 
+          <a class="font-bold text-primary underline" href="tel:8778558529">8778558529</a>
+</p>
+</div>
+</div>
+</section>
+<!-- CLINIC ACCREDITATION & FOOTNOTE CARD -->
+<section class="px-gutter pb-4">
+<div class="p-4 rounded-xl bg-surface-container-low text-center space-y-2">
+<p class="font-label-md text-label-md text-on-surface font-bold">C.S. DENTAL CARE • Acharapakkam</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        First Floor, Lakshmi Complex, No: 15/1, Opposite to IOB, Acharapakkam, Tamil Nadu 603301. Providing gentle, ethical, and hygienic dentistry to our community.
+      </p>
+<div class="flex items-center justify-center gap-4 pt-2">
+<a class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1" href="tel:8778558529">
+<span class="material-symbols-outlined text-[16px]">call</span> 8778558529
+        </a>
+<span class="text-outline-variant">•</span>
+<a class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1" href="https://wa.me/918778558529" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span> WhatsApp
+        </a>
+</div>
+</div>
+</section>
+<!-- FLOATING PERSISTENT EMERGENCY / ACTION DOCK -->
+<div class="sticky bottom-2 inset-x-0 px-gutter z-30 pointer-events-none mb-2">
+<div class="pointer-events-auto bg-inverse-surface text-inverse-on-surface rounded-full p-1.5 shadow-xl flex items-center justify-between gap-2 max-w-md mx-auto">
+<div class="flex items-center gap-2 pl-3 min-w-0">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-fixed animate-ping"></div>
+<div class="truncate">
+<span class="block font-label-sm text-label-sm font-bold text-white truncate">Tooth Pain Emergency?</span>
+<span class="block font-body-sm text-[10px] text-slate-300 truncate">Lakshmi Complex • Opp. IOB</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<a class="h-10 px-3 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm flex items-center gap-1 active:scale-95 transition-transform" href="https://wa.me/918778558529" target="_blank" title="WhatsApp">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="hidden xs:inline">Chat</span>
+</a>
+<a class="h-10 px-4 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-md active:scale-95 transition-transform" href="tel:8778558529">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call 8778558529</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function handleBookingSubmit(e) {
+    e.preventDefault();
+    const form = document.getElementById('booking-form');
+    const successBox = document.getElementById('booking-success');
+    if (form && successBox) {
+      form.reset();
+      successBox.classList.remove('hidden');
+      setTimeout(() => {
+        successBox.classList.add('hidden');
+      }, 5000);
+    }
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-semibold"><div class="h-16 px-margin flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors gap-0.5 text-primary font-semibold" data-path="clinic-overview" href="#"><span class="material-symbols-outlined text-[22px]">local_hospital</span><span class="font-label-sm text-[10px] tracking-normal">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors gap-0.5" data-path="treatments-and-services" href="#"><span class="material-symbols-outlined text-[22px]">medical_services</span><span class="font-label-sm text-[10px] tracking-normal">Treatments</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors gap-0.5" data-path="dental-specialists" href="#"><span class="material-symbols-outlined text-[22px]">group</span><span class="font-label-sm text-[10px] tracking-normal">Doctors</span></a><a class="flex items-center justify-center px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm active:scale-95 transition-transform gap-1 min-h-[44px]" data-path="book-appointment" href="#"><span class="material-symbols-outlined text-[18px]">calendar_month</span><span>Book</span></a></div></nav></body></html>
