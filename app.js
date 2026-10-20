@@ -73,12 +73,139 @@ function initClinicStatus() {
   setInterval(updateStatus, 60000);
 }
 
-// 2. Appointment Booking System with WhatsApp integration
+// 2. Appointment Booking System with Storage & WhatsApp integration
+const APPOINTMENTS_STORAGE_KEY = 'cs_dental_appointments';
+
+function formatBookingDateTime(date) {
+  const d = date instanceof Date ? date : new Date(date);
+  return d.toLocaleString('en-IN', {
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: true
+  });
+}
+
+function getStoredAppointments() {
+  try {
+    const raw = localStorage.getItem(APPOINTMENTS_STORAGE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+    }
+  } catch (e) {
+    console.error('Error reading appointments from storage:', e);
+  }
+  return initDefaultAppointments();
+}
+
+function initDefaultAppointments() {
+  const now = new Date();
+  const formatIsoWithMinutesAgo = (minsAgo) => {
+    const t = new Date(now.getTime() - minsAgo * 60000);
+    return {
+      iso: t.toISOString(),
+      formatted: formatBookingDateTime(t)
+    };
+  };
+
+  const t1 = formatIsoWithMinutesAgo(35);
+  const t2 = formatIsoWithMinutesAgo(90);
+  const t3 = formatIsoWithMinutesAgo(150);
+  const t4 = formatIsoWithMinutesAgo(280);
+
+  const defaults = [
+    {
+      id: 'CSD-839210',
+      type: 'online',
+      patientName: 'Priya Mohan',
+      patientPhone: '9840123456',
+      treatment: 'Single-Visit Root Canal Treatment (RCT)',
+      preferredDate: 'Today',
+      timeSlot: 'Morning (9:30 AM - 1:30 PM)',
+      notes: 'Severe sharp pain in lower right molar when chewing.',
+      bookingCreatedAt: t1.iso,
+      bookingCreatedAtFormatted: t1.formatted,
+      status: 'pending',
+      doctor: 'Dr. Ashtalakshmi',
+      fee: 'Consultation ₹300'
+    },
+    {
+      id: 'CSD-WLK-4019',
+      type: 'offline',
+      patientName: 'Karthik Subramanian',
+      patientPhone: '9884567890',
+      treatment: 'Teeth Whitening & Scaling',
+      preferredDate: 'Today',
+      timeSlot: '11:30 AM',
+      notes: 'Walk-in for regular tartar cleaning and stain removal.',
+      bookingCreatedAt: t2.iso,
+      bookingCreatedAtFormatted: t2.formatted,
+      status: 'confirmed',
+      doctor: 'Dr. Ashtalakshmi',
+      fee: '₹800 (Paid via GPay)'
+    },
+    {
+      id: 'CSD-519283',
+      type: 'online',
+      patientName: 'Ananya Sridhar',
+      patientPhone: '9444123890',
+      treatment: 'Clear Aligners & Braces',
+      preferredDate: 'Tomorrow',
+      timeSlot: 'Evening (4:30 PM - 8:30 PM)',
+      notes: 'Interested in invisible teeth aligners consultation.',
+      bookingCreatedAt: t3.iso,
+      bookingCreatedAtFormatted: t3.formatted,
+      status: 'confirmed',
+      doctor: 'Dr. Ashtalakshmi',
+      fee: 'Consultation ₹300'
+    },
+    {
+      id: 'CSD-WLK-7182',
+      type: 'offline',
+      patientName: 'Meenakshi Sundaram',
+      patientPhone: '9789012345',
+      treatment: 'Wisdom Tooth Pain / Extraction',
+      preferredDate: 'Today',
+      timeSlot: '05:00 PM',
+      notes: 'Walked in with relative; swollen lower gum around wisdom tooth.',
+      bookingCreatedAt: t4.iso,
+      bookingCreatedAtFormatted: t4.formatted,
+      status: 'confirmed',
+      doctor: 'Dr. Ashtalakshmi',
+      fee: '₹500 (OPG + Consultation - Cash)'
+    }
+  ];
+
+  try {
+    localStorage.setItem(APPOINTMENTS_STORAGE_KEY, JSON.stringify(defaults));
+  } catch (e) {
+    console.error('Failed to save default appointments', e);
+  }
+  return defaults;
+}
+
+function saveOnlineAppointment(data) {
+  try {
+    const list = getStoredAppointments();
+    list.unshift(data);
+    localStorage.setItem(APPOINTMENTS_STORAGE_KEY, JSON.stringify(list));
+    window.dispatchEvent(new CustomEvent('cs_appointment_added', { detail: data }));
+  } catch (e) {
+    console.error('Failed to save online appointment', e);
+  }
+}
+
 function initBookingForm() {
   const forms = [
     document.getElementById('booking-form'),
     document.getElementById('modal-booking-form')
   ].filter(Boolean);
+
+  // Initialize storage defaults if empty
+  getStoredAppointments();
 
   forms.forEach(form => {
     form.addEventListener('submit', (e) => {
@@ -103,7 +230,27 @@ function initBookingForm() {
       }
 
       const refId = 'CSD-' + Math.floor(100000 + Math.random() * 900000);
+      const now = new Date();
       
+      // Save appointment record to storage with booking date and time
+      const newOnlineBooking = {
+        id: refId,
+        type: 'online',
+        patientName: name,
+        patientPhone: phone,
+        treatment: treatment,
+        preferredDate: date,
+        timeSlot: slot,
+        notes: notes || 'No additional notes provided.',
+        bookingCreatedAt: now.toISOString(),
+        bookingCreatedAtFormatted: formatBookingDateTime(now),
+        status: 'pending',
+        doctor: 'Dr. Ashtalakshmi',
+        fee: 'Consultation ₹300'
+      };
+
+      saveOnlineAppointment(newOnlineBooking);
+
       // WhatsApp message URL
       const waText = encodeURIComponent(
         `Hello C.S. Dental Care, I would like to book an appointment:\n` +
@@ -112,6 +259,7 @@ function initBookingForm() {
         `• Phone: ${phone}\n` +
         `• Treatment: ${treatment}\n` +
         `• Preferred Slot: ${date} (${slot})\n` +
+        `• Booked Online: ${newOnlineBooking.bookingCreatedAtFormatted}\n` +
         (notes ? `• Symptoms/Notes: ${notes}\n` : '') +
         `Please confirm my appointment. Thank you!`
       );
